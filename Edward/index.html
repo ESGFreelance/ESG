@@ -19,10 +19,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous"></script>
-
+    <!--  <script src="assets/js/controller.js"></script> -->
 </head>
 
 <body id="page-top">
+
+
 
     <!--MODAL START-->
 
@@ -62,7 +64,7 @@
 
     <!--Dapper MODAL-->
     <div class="modal fade" id="myModalDapper" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -86,7 +88,7 @@
 
     <!--Entity Framework MODAL-->
     <div class="modal fade" id="myModalEntity" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -110,7 +112,7 @@
 
     <!--Oracle Database MODAL-->
     <div class="modal fade" id="myModalOracle" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -119,8 +121,64 @@
 
                 </div>
                 <div class="modal-body">
+                    <h2 id="basic">Fast Learning: PL/SQL</h2>
+                    <div class="type-wrap">
+                        <span id="typedOracle"></span>
+                    </div>
+                    <div id="typed-strings" style="display:none;">
+
+                        <pre style='color:#000000;background:#ffffff;'>
+                           <span style='color:#800000; font-weight:bold; '>CREATE</span> <span style='color:#800000; font-weight:bold; '>TABLE</span> PRACTICAL
+                            <br /><span style='color:#808030; '>(</span>
+                            <br />SID <span style='color:#800000; font-weight:bold; '>INT</span><span style='color:#808030; '>,</span>
+                            <br />FNAME <span style='color:#800000; font-weight:bold; '>VARCHAR</span><span style='color:#808030; '>(</span><span style='color:#008c00; '>30</span><span style='color:#808030; '>)</span><span style='color:#808030; '>,</span>
+                            <br />LNAME <span style='color:#800000; font-weight:bold; '>VARCHAR</span><span style='color:#808030; '>(</span><span style='color:#008c00; '>30</span><span style='color:#808030; '>)</span><span style='color:#808030; '>,</span>
+                            <br />MONEY <span style='color:#800000; font-weight:bold; '>INT</span><span style='color:#808030; '>,</span>
+                            <br />COURSE <span style='color:#800000; font-weight:bold; '>VARCHAR</span><span style='color:#808030; '>(</span><span style='color:#008c00; '>30</span><span style='color:#808030; '>)</span>
+                            <br /><span style='color:#808030; '>)</span><span style='color:#808030; '>;</span>
+                        </pre>
+                    </div>
+                    <table>
+                        <tr>
+                            <th>Company</th>
+                            <th>Contact</th>
+                            <th>Country</th>
+                        </tr>
+                        <tr>
+                            <td>Alfreds Futterkiste</td>
+                            <td>Maria Anders</td>
+                            <td>Germany</td>
+                        </tr>
+                        <tr>
+                            <td>Centro comercial Moctezuma</td>
+                            <td>Francisco Chang</td>
+                            <td>Mexico</td>
+                        </tr>
+                        <tr>
+                            <td>Ernst Handel</td>
+                            <td>Roland Mendel</td>
+                            <td>Austria</td>
+                        </tr>
+                        <tr>
+                            <td>Island Trading</td>
+                            <td>Helen Bennett</td>
+                            <td>UK</td>
+                        </tr>
+                        <tr>
+                            <td>Laughing Bacchus Winecellars</td>
+                            <td>Yoshi Tannamuri</td>
+                            <td>Canada</td>
+                        </tr>
+                        <tr>
+                            <td>Magazzini Alimentari Riuniti</td>
+                            <td>Giovanni Rovelli</td>
+                            <td>Italy</td>
+                        </tr>
+                    </table>
+                    <p>In this article, we're going to tackle about how to combine a SQL query (Database Language) and a procedural programming language</p>
 
 
+                    </span>
                 </div>
 
                 <div class="modal-footer">
@@ -134,7 +192,7 @@
 
     <!--MSSQL MODAL-->
     <div class="modal fade" id="myModalMSSQL" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -158,7 +216,7 @@
 
     <!--Oracle Forms and Reports MODAL-->
     <div class="modal fade" id="myModalForms" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -182,7 +240,7 @@
 
     <!--Javascript MODAL-->
     <div class="modal fade" id="myModalJS" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -206,7 +264,7 @@
 
     <!--Bootstrap MODAL-->
     <div class="modal fade" id="myModalBS" role="dialog" data-backdrop="static" data-keyboard="false">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-scrollable modal-xl">
             <!-- Modal content-->
             <div class="modal-content" id="modalwindow">
                 <div class="modal-header">
@@ -231,7 +289,7 @@
     <!--MODAL END-->
 
 
-
+    <!--NAVIGATION START-->
     <nav class="navbar navbar-light navbar-expand-lg fixed-top" id="mainNav">
         <div class="container">
             <button data-toggle="collapse" data-target="#navbarResponsive" class="navbar-toggler float-right" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
@@ -249,6 +307,7 @@
             </div>
         </div>
     </nav>
+    <!--NAVIGATION END-->
 
     <header id="home" style="height:100%;">
 
@@ -284,8 +343,9 @@
         <div style="text-align: center; margin-bottom: 50px;">
             <h1 style="font-weight: 1000;">SKILLSET</h1>
             <div>
-                <h7 style="font-style: italic;">Click the card to see a prototype</h7>
+                <h7 style="font-style: italic;">Click a card to see the prototype</h7>
             </div>
+
         </div>
 
 
@@ -343,7 +403,9 @@
                     </div>
 
                     <div class="myCards col-xs-12 col-sm-6 col-md-3 col-lg-3">
-                        <a class='btnOracle'>
+
+                        <a class='btnOracle reset'>
+
                             <div class="card-flyer">
                                 <div class="text-box">
                                     <div class="image-box">
@@ -367,7 +429,7 @@
                                     </div>
                                     <div class="text-container ">
                                         <h6>MSSQL Server</h6>
-                                        <p>Uses Windows Forms Application and ASP.NET MVC 5 in developing applications, XUnit for testing, and Web APIs using Microsoft Visual Studio.</p>
+                                        <p>Uses MSSQL in developing .NET applications that is being integrated with either Dapper Micro ORM or Entity Framework ORM to handle transactions.</p>
                                     </div>
                                 </div>
                             </div>
@@ -383,7 +445,7 @@
                                     </div>
                                     <div class="text-container ">
                                         <h6>Forms & Reports</h6>
-                                        <p>Can create applications using Oracle Forms where the processed data, information, and transaction history can be generated through Oracle Reports</p>
+                                        <p>Can create applications using Oracle Forms where the processed data, information, and transaction history can be generated through Oracle Reports.</p>
                                     </div>
                                 </div>
                             </div>
@@ -399,7 +461,7 @@
                                     </div>
                                     <div class="text-container ">
                                         <h6>Javascript</h6>
-                                        <p></p>
+                                        <p>Used primarily in developing web applications together with other libraries like JQuery, DataTables, and Mapstraction for developing maps.</p>
                                     </div>
                                 </div>
                             </div>
@@ -601,4 +663,17 @@
         $('#myModalBS').modal('show');
     });
     //MODAL SECTION END
+
+    //WRITING SECTION
+    document.addEventListener('DOMContentLoaded', function() {
+        var typed = new Typed('#typedOracle', {
+            stringsElement: '#typed-strings',
+            typeSpeed: 0,
+            loop: false,
+            showCursor: false
+        });
+        document.querySelector('.reset').addEventListener('click', function() {
+            typed.reset();
+        });
+    });
 </script>

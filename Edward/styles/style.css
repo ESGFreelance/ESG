@@ -169,3 +169,32 @@ h1:hover {
     letter-spacing: 1px;
     color: #00acc1;
 }
+
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 1px grey;
+    border-radius: 1px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #fdcc52!important;
+    border-radius: 1px;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+}
